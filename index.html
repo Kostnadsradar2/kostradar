@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kostnadsradar – vi pekar ut. Ni beslutar.</title>
 
-  <meta name="description" content="Kostnadsradar identifierar 3–5 återkommande kostnader som kan vara värda att se över och ger ett tydligt beslutsunderlag.">
-  <meta name="keywords" content="kostnadsanalys, återkommande kostnader, beslutsstöd, företagskostnader">
-  <meta name="geo.region" content="SE">
-  <meta name="geo.placename" content="Sverige">
-  <link rel="canonical" href="https://kostnadsradar.se/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Kostnadsradar – vi pekar ut. Ni beslutar.">
-  <meta property="og:description" content="Vi identifierar 3–5 återkommande kostnader som kan vara värda att se över – och ger ett tydligt beslutsunderlag.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kostnadsradar.se/">
-
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,130 +18,104 @@
   </style>
 </head>
 
-<body class="antialiased text-slate-900">
+<body class="antialiased bg-white">
 
 <!-- HEADER -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-  <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-    <div class="font-semibold text-lg">Kostnadsradar</div>
-    <a href="#contact" class="px-5 py-2 bg-slate-900 text-white rounded-lg text-sm">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+  <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+    <img
+      src="https://static.readdy.ai/image/114c45ad959f6c3910d2b48be05f0959/800abfbf0feaee56eec23c2f1b282ef2.png"
+      alt="Kostnadsradar logotyp"
+      class="h-20 w-auto flex-shrink-0"
+    />
+    <a href="mailto:info@kostnadsradar.se" class="px-6 py-3 bg-slate-900 text-white rounded-lg">
       Kontakta oss
     </a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section class="pt-32 pb-24 bg-slate-50">
-  <div class="max-w-4xl mx-auto px-6 text-center">
+<section class="pt-44 pb-32 bg-slate-50">
+  <div class="max-w-4xl mx-auto text-center px-6">
     <h1 class="text-4xl lg:text-5xl font-semibold mb-6">
       Kostnadsradar – vi pekar ut. Ni beslutar.
     </h1>
-    <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+    <p class="text-lg text-slate-600 mb-10">
       Vi identifierar 3–5 återkommande kostnader som kan vara värda att se över – och ger ett tydligt beslutsunderlag.
     </p>
-    <a href="#contact" class="inline-block px-8 py-4 bg-slate-900 text-white rounded-lg">
+    <a href="mailto:info@kostnadsradar.se" class="px-8 py-4 bg-slate-900 text-white rounded-lg">
       Kontakta oss
     </a>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="py-24 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-semibold mb-4">Så här fungerar det</h2>
-      <p class="text-slate-600">
-        En enkel process i tre steg som ger dig full kontroll över era kostnader.
-      </p>
-    </div>
+<!-- SÅ FUNKAR DET -->
+<section class="py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Så här fungerar det</h2>
+    <p class="text-slate-600 mb-16">En enkel process i tre steg.</p>
 
-    <div class="grid md:grid-cols-3 gap-12 text-center">
+    <div class="grid md:grid-cols-3 gap-12">
       <div>
-        <div class="text-xl font-semibold mb-2">01</div>
-        <h3 class="font-semibold mb-2">Kartläggning</h3>
-        <p class="text-slate-600">
-          Vi går igenom era återkommande kostnader – prenumerationer, tjänster, licenser och avtal.
-        </p>
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">01</div>
+        <h3 class="text-xl font-semibold mb-2">Kartläggning</h3>
+        <p class="text-slate-600">Genomgång av era återkommande kostnader.</p>
       </div>
       <div>
-        <div class="text-xl font-semibold mb-2">02</div>
-        <h3 class="font-semibold mb-2">Analys</h3>
-        <p class="text-slate-600">
-          Vi identifierar vad som används, vad som inte används och var det finns överlapp.
-        </p>
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">02</div>
+        <h3 class="text-xl font-semibold mb-2">Analys</h3>
+        <p class="text-slate-600">Identifiering av överlapp och låg nytta.</p>
       </div>
       <div>
-        <div class="text-xl font-semibold mb-2">03</div>
-        <h3 class="font-semibold mb-2">Beslutsunderlag</h3>
-        <p class="text-slate-600">
-          Ni får ett tydligt underlag med konkreta beslutspunkter.
-        </p>
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">03</div>
+        <h3 class="text-xl font-semibold mb-2">Beslutsunderlag</h3>
+        <p class="text-slate-600">3–5 tydliga rekommendationer.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHAT WE DO -->
-<section class="py-24 bg-slate-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-semibold mb-4">Vad vi gör – och inte gör</h2>
-      <p class="text-slate-600">Transparens och oberoende är grunden för vårt arbete.</p>
+<!-- VAD VI GÖR / INTE GÖR -->
+<section class="py-28 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div class="bg-white p-8 rounded-xl shadow-sm">
+      <h3 class="text-2xl font-semibold mb-4">Vad vi gör</h3>
+      <ul class="space-y-3 text-slate-700">
+        <li>• Kartlägger återkommande kostnader</li>
+        <li>• Identifierar dubletter och prisökningar</li>
+        <li>• Levererar beslutsunderlag</li>
+      </ul>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-12">
-      <div class="bg-white p-8 rounded-xl shadow-sm">
-        <h3 class="font-semibold mb-4">Vad vi gör</h3>
-        <ul class="space-y-2 text-slate-700">
-          <li>✔ Kartlägger era återkommande kostnader</li>
-          <li>✔ Identifierar oanvända eller överlappande tjänster</li>
-          <li>✔ Ger tydligt beslutsunderlag baserat på fakta</li>
-          <li>✔ Hjälper er att fatta informerade beslut</li>
-        </ul>
-      </div>
-
-      <div class="bg-white p-8 rounded-xl shadow-sm">
-        <h3 class="font-semibold mb-4">Vad vi inte gör</h3>
-        <ul class="space-y-2 text-slate-700">
-          <li>✖ Säljer inga egna produkter eller tjänster</li>
-          <li>✖ Tar inga provisioner från leverantörer</li>
-          <li>✖ Fattar inga beslut åt er</li>
-          <li>✖ Lovar inga orealistiska besparingar</li>
-        </ul>
-      </div>
+    <div class="bg-white p-8 rounded-xl shadow-sm">
+      <h3 class="text-2xl font-semibold mb-4">Vad vi inte gör</h3>
+      <ul class="space-y-3 text-slate-700">
+        <li>• Fattar inga beslut åt er</li>
+        <li>• Säljer inga produkter</li>
+        <li>• Lovar inga besparingar</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-24 bg-white">
-  <div class="max-w-xl mx-auto px-6">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl font-semibold mb-4">Kontakta oss</h2>
-      <p class="text-slate-600">
-        Skicka en förfrågan så återkommer vi.
-      </p>
-    </div>
-
-    <form class="bg-slate-50 p-8 rounded-xl space-y-4">
-      <input type="text" placeholder="Namn" class="w-full p-3 rounded border">
-      <input type="email" placeholder="E-post" class="w-full p-3 rounded border">
-      <input type="text" placeholder="Företag" class="w-full p-3 rounded border">
-      <textarea placeholder="Meddelande (valfritt)" class="w-full p-3 rounded border"></textarea>
-      <p class="text-sm text-slate-500">
-        All information används endast för analys och delas aldrig vidare.
-      </p>
-      <button class="w-full py-3 bg-slate-900 text-white rounded-lg">
-        Skicka
-      </button>
-    </form>
+<!-- KONTAKT -->
+<section class="py-32 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center mb-10">
+    <h2 class="text-3xl font-semibold mb-4">Kontakta oss</h2>
+    <p class="text-slate-600">
+      Fyll i formuläret eller maila oss direkt på
+      <a href="mailto:info@kostnadsradar.se" class="underline">info@kostnadsradar.se</a>
+    </p>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="py-8 text-center text-sm text-slate-500 bg-slate-50">
-  Kostnadsradar – externt beslutsstöd för kostnadskontroll
-</footer>
-
-</body>
-</html>
+  <form
+    action="mailto:info@kostnadsradar.se"
+    method="post"
+    enctype="text/plain"
+    class="bg-slate-50 rounded-xl p-8 max-w-md mx-auto shadow-sm space-y-6"
+  >
+    <input name="Namn" placeholder="Namn *" required class="w-full border rounded-lg px-4 py-3">
+    <input name="E-post" type="email" placeholder="E-post *" required class="w-full border rounded-lg px-4 py-3">
+    <input name="Företag" placeholder="Företag *" required class="w-full border rounded-lg px-4 py-3">
+    <input name="Telefon" placeholder="Telefon" class="w-full border rounded-lg px-4 py-3">
+    <textarea name="Meddelande" placeholder="Meddelande" rows="4" class="w
