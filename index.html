@@ -1,121 +1,330 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kostnadsradar – vi pekar ut. Ni beslutar.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Möjlighetsbrev – Relevanta uppdrag utan att sålla själv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <script src="https://cdn.tailwindcss.com"></script>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+        }
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    html { scroll-behavior: smooth; }
-  </style>
+        /* Hero */
+        .hero {
+            padding: 140px 0 100px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.5;
+            max-width: 95%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            transform: translateY(-1px);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #444;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            color: #444;
+            position: relative;
+            padding-left: 24px;
+            font-size: 17px;
+        }
+
+        li:before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            color: #999;
+            font-weight: 400;
+        }
+
+        /* City List */
+        .city-list {
+            margin: 24px 0;
+        }
+
+        .city-list li {
+            padding: 12px 0;
+            padding-left: 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #1a1a1a;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .city-list li:last-child {
+            border-bottom: none;
+        }
+
+        .city-list li:before {
+            content: none;
+        }
+
+        .city-note {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Price & Order Box */
+        .price-section {
+            background-color: #fafafa;
+        }
+
+        .price-box {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 48px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .price-period {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .price-note {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 36px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .btn-large {
+            padding: 18px 48px;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 6px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            .hero {
+                padding: 100px 0 80px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            section {
+                padding: 64px 0;
+            }
+
+            .price-box {
+                padding: 36px 24px;
+            }
+
+            p, li {
+                font-size: 16px;
+            }
+
+            .city-list li {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
+<body>
 
-<body class="antialiased bg-white">
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <h1>Relevanta uppdrag – utan att du behöver sålla själv.</h1>
+            <p class="subtitle">Möjlighetsbrev sammanställer varje vecka de uppdrag som faktiskt är värda att titta på.</p>
+            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ</a>
+        </div>
+    </header>
 
-<!-- HEADER -->
-<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-  <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-    <img
-      src="https://static.readdy.ai/image/114c45ad959f6c3910d2b48be05f0959/800abfbf0feaee56eec23c2f1b282ef2.png"
-      alt="Kostnadsradar logotyp"
-      class="h-20 w-auto flex-shrink-0"
-    />
-    <a href="mailto:info@kostnadsradar.se" class="px-6 py-3 bg-slate-900 text-white rounded-lg">
-      Kontakta oss
-    </a>
-  </nav>
-</header>
+    <!-- Problemet -->
+    <section>
+        <div class="container">
+            <h2>Problemet</h2>
+            <p>Många företag missar relevanta uppdrag eftersom informationen är utspridd på många håll, tidskrävande att gå igenom och ofta innehåller mycket som inte är relevant i praktiken.</p>
+        </div>
+    </section>
 
-<!-- HERO -->
-<section class="pt-44 pb-32 bg-slate-50">
-  <div class="max-w-4xl mx-auto text-center px-6">
-    <h1 class="text-4xl lg:text-5xl font-semibold mb-6">
-      Kostnadsradar – vi pekar ut. Ni beslutar.
-    </h1>
-    <p class="text-lg text-slate-600 mb-10">
-      Vi identifierar 3–5 återkommande kostnader som kan vara värda att se över – och ger ett tydligt beslutsunderlag.
-    </p>
-    <a href="mailto:info@kostnadsradar.se" class="px-8 py-4 bg-slate-900 text-white rounded-lg">
-      Kontakta oss
-    </a>
-  </div>
-</section>
+    <!-- Lösningen -->
+    <section>
+        <div class="container">
+            <h2>Lösningen</h2>
+            <p>Möjlighetsbrev gör ett manuellt urval och skickar en tydlig sammanställning en gång i veckan. Fokus ligger på uppdrag som är rimliga att räkna på.</p>
+        </div>
+    </section>
 
-<!-- SÅ FUNKAR DET -->
-<section class="py-28 bg-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Så här fungerar det</h2>
-    <p class="text-slate-600 mb-16">En enkel process i tre steg.</p>
+    <!-- Så fungerar det -->
+    <section>
+        <div class="container">
+            <h2>Så fungerar det</h2>
+            <ul>
+                <li>Du väljer stad eller städer</li>
+                <li>Du får ett veckobrev med utvalda uppdrag</li>
+                <li>Du sparar tid och missar färre möjligheter</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="grid md:grid-cols-3 gap-12">
-      <div>
-        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">01</div>
-        <h3 class="text-xl font-semibold mb-2">Kartläggning</h3>
-        <p class="text-slate-600">Genomgång av era återkommande kostnader.</p>
-      </div>
-      <div>
-        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">02</div>
-        <h3 class="text-xl font-semibold mb-2">Analys</h3>
-        <p class="text-slate-600">Identifiering av överlapp och låg nytta.</p>
-      </div>
-      <div>
-        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-slate-100 flex items-center justify-center font-semibold">03</div>
-        <h3 class="text-xl font-semibold mb-2">Beslutsunderlag</h3>
-        <p class="text-slate-600">3–5 tydliga rekommendationer.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Vad du får -->
+    <section>
+        <div class="container">
+            <h2>Vad du får</h2>
+            <ul>
+                <li>Veckovis sammanställning via e-post</li>
+                <li>Direktlänkar till varje uppdrag</li>
+                <li>Kort kommentar om typ av uppdrag</li>
+                <li>Ett urval gjort för praktisk användning</li>
+            </ul>
+        </div>
+    </section>
 
-<!-- VAD VI GÖR / INTE GÖR -->
-<section class="py-28 bg-slate-50">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-    <div class="bg-white p-8 rounded-xl shadow-sm">
-      <h3 class="text-2xl font-semibold mb-4">Vad vi gör</h3>
-      <ul class="space-y-3 text-slate-700">
-        <li>• Kartlägger återkommande kostnader</li>
-        <li>• Identifierar dubletter och prisökningar</li>
-        <li>• Levererar beslutsunderlag</li>
-      </ul>
-    </div>
+    <!-- Städer -->
+    <section>
+        <div class="container">
+            <h2>Städer vi bevakar</h2>
+            <p>För närvarande erbjuder vi Möjlighetsbrev för dessa orter:</p>
+            <ul class="city-list">
+                <li>1️⃣ Stockholm</li>
+                <li>2️⃣ Göteborg</li>
+                <li>3️⃣ Malmö</li>
+                <li>4️⃣ Uppsala</li>
+                <li>5️⃣ Linköping</li>
+            </ul>
+            <p class="city-note">Övriga städer kan vara möjliga vid förfrågan – kontakta oss så ser vi om vi kan lösa det för just din ort.</p>
+        </div>
+    </section>
 
-    <div class="bg-white p-8 rounded-xl shadow-sm">
-      <h3 class="text-2xl font-semibold mb-4">Vad vi inte gör</h3>
-      <ul class="space-y-3 text-slate-700">
-        <li>• Fattar inga beslut åt er</li>
-        <li>• Säljer inga produkter</li>
-        <li>• Lovar inga besparingar</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <!-- Pris & Beställ – Combined -->
+    <section class="price-section">
+        <div class="container">
+            <h2>Pris</h2>
+            <div class="price-box">
+                <div class="price">1 495 kr</div>
+                <div class="price-period">för 3 månader</div>
+                <p class="price-note">Tjänsten levereras i fasta 3-månadersperioder eftersom relevanta uppdrag tar tid att identifiera och utvärdera.</p>
+                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
+            </div>
+        </div>
+    </section>
 
-<!-- KONTAKT -->
-<section class="py-32 bg-white">
-  <div class="max-w-3xl mx-auto px-6 text-center mb-10">
-    <h2 class="text-3xl font-semibold mb-4">Kontakta oss</h2>
-    <p class="text-slate-600">
-      Fyll i formuläret eller maila oss direkt på
-      <a href="mailto:info@kostnadsradar.se" class="underline">info@kostnadsradar.se</a>
-    </p>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Möjlighetsbrev</strong></p>
+            <p>kontakt@mojlighetsbrev.se</p>
+            <p>Sverige</p>
+        </div>
+    </footer>
 
-  <form
-    action="mailto:info@kostnadsradar.se"
-    method="post"
-    enctype="text/plain"
-    class="bg-slate-50 rounded-xl p-8 max-w-md mx-auto shadow-sm space-y-6"
-  >
-    <input name="Namn" placeholder="Namn *" required class="w-full border rounded-lg px-4 py-3">
-    <input name="E-post" type="email" placeholder="E-post *" required class="w-full border rounded-lg px-4 py-3">
-    <input name="Företag" placeholder="Företag *" required class="w-full border rounded-lg px-4 py-3">
-    <input name="Telefon" placeholder="Telefon" class="w-full border rounded-lg px-4 py-3">
-    <textarea name="Meddelande" placeholder="Meddelande" rows="4" class="w
+</body>
+</html>
