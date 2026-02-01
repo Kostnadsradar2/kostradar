@@ -42,7 +42,7 @@
             border-bottom: 2px solid #1a202c;
         }
 
-        /* Hero Section - Full width image layout */
+        /* Hero Section */
         .hero {
             padding: 60px 0 0;
             background-color: #ffffff;
@@ -53,7 +53,6 @@
             padding-bottom: 60px;
         }
 
-        /* Hypothetical question - subtil ovanför rubrik */
         .hypothetical-question {
             font-size: 15px;
             color: #718096;
@@ -72,7 +71,6 @@
             letter-spacing: -0.02em;
         }
 
-        /* Full width hero image */
         .hero-image-fullwidth {
             width: 100%;
             margin: 0;
@@ -202,7 +200,7 @@
             border-left: 4px solid #cbd5e0;
         }
 
-        /* Price Section */
+        /* Price Section - Uppdaterad */
         .price-section {
             background-color: #edf2f7;
             padding: 100px 0;
@@ -215,7 +213,7 @@
             border-radius: 12px;
             text-align: center;
             box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-            max-width: 600px;
+            max-width: 640px;
             margin: 0 auto;
         }
 
@@ -230,31 +228,68 @@
         .price-period {
             font-size: 18px;
             color: #4a5568;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             font-weight: 500;
         }
 
-        .price-note {
+        .price-moms {
             font-size: 16px;
             color: #718096;
             margin-bottom: 32px;
-            line-height: 1.6;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            font-weight: 400;
         }
 
-        .price-moms {
-            font-size: 14px;
-            color: #a0aec0;
-            margin-top: 16px;
-            margin-bottom: 32px;
-            letter-spacing: 0.01em;
+        /* Nytt: What happens box */
+        .what-happens {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 32px;
+            margin: 32px 0;
+            text-align: left;
+        }
+
+        .what-happens h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .what-happens ul {
+            margin-top: 0;
+        }
+
+        .what-happens li {
+            font-size: 16px;
+            padding: 8px 0;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .what-happens li:before {
+            content: "✓";
+            color: #48bb78;
+            font-weight: 600;
+            left: 0;
+        }
+
+        .no-automation {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 15px;
+            color: #718096;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.6;
         }
 
         .btn-large {
             padding: 20px 56px;
             font-size: 18px;
+            margin-top: 8px;
         }
 
         /* Footer */
@@ -299,7 +334,11 @@
             }
 
             .price-box {
-                padding: 40px 28px;
+                padding: 40px 24px;
+            }
+
+            .what-happens {
+                padding: 24px;
             }
 
             .city-list {
@@ -320,16 +359,13 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-content">
-            <!-- Hypothetical question above headline -->
             <p class="hypothetical-question">Hur mycket tid går åt till att sålla bland jobb som inte är relevanta?</p>
             
-            <!-- New shorter, punchier headline -->
             <h1>Uppdrag som är värda att räkna på – varje vecka.</h1>
             
-            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ nu</a>
+            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ nu</a>
         </div>
 
-        <!-- Full width hero image - Craft/workshop -->
         <div class="hero-image-fullwidth">
             <img src="https://images.pexels.com/photos/5691606/pexels-photo-5691606.jpeg?auto=compress&cs=tinysrgb&w=1260" 
                  alt="Snickare som mäter virke i verkstad – symboliserar yrkeskunnigt arbete och noggrannhet">
@@ -397,18 +433,29 @@
         </div>
     </section>
 
-    <!-- Pris & Beställ -->
+    <!-- Pris & Beställ – Uppdaterad med tydlig info -->
     <section class="price-section">
         <div class="container">
             <div class="price-box">
                 <div class="price">1 495 kr</div>
                 <div class="price-period">för 3 månader</div>
-                <p class="price-note">Tjänsten levereras i fasta 3-månadersperioder eftersom relevanta uppdrag tar tid att identifiera och utvärdera.</p>
+                <div class="price-moms">Pris exklusive moms. Inga övriga avgifter.</div>
                 
-                <!-- Tydligt ex moms -->
-                <p class="price-moms">Pris: 1 495 kr / 3 månader (exkl. moms)</p>
-                
-                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
+                <!-- Vad som händer-box -->
+                <div class="what-happens">
+                    <h3>Så här fungerar det:</h3>
+                    <ul>
+                        <li>Du beställer en fast period om 3 månader</li>
+                        <li>Fakturan skickas när beställningen behandlas</li>
+                        <li>Efter 3 månader upphör tjänsten automatiskt</li>
+                        <li>Vi kontaktar dig innan perioden tar slut för att höra om du vill fortsätta</li>
+                    </ul>
+                    <div class="no-automation">
+                        Ingen automatisk förlängning. Du står alltid själv för valet att fortsätta eller avsluta.
+                    </div>
+                </div>
+
+                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
             </div>
         </div>
     </section>
