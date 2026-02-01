@@ -12,130 +12,175 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
+            color: #2d3748;
             background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 680px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 28px;
         }
 
-        /* Logo/Brand */
-        .brand {
-            font-size: 15px;
-            font-weight: 600;
-            color: #1a1a1a;
-            letter-spacing: 0.03em;
-            margin-bottom: 60px;
-            text-transform: uppercase;
-        }
-
-        /* Hero */
-        .hero {
-            padding: 60px 0 100px;
+        /* Brand header */
+        .brand-header {
+            padding: 32px 0 0;
             background-color: #ffffff;
-            border-bottom: 1px solid #eee;
+        }
+
+        .brand {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1a202c;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #1a202c;
+        }
+
+        /* Hero Section - Full width image layout */
+        .hero {
+            padding: 60px 0 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-content {
+            padding-bottom: 60px;
+        }
+
+        /* Hypothetical question - subtil ovanför rubrik */
+        .hypothetical-question {
+            font-size: 15px;
+            color: #718096;
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.01em;
         }
 
         h1 {
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 1.25;
-            color: #1a1a1a;
-            margin-bottom: 20px;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #1a202c;
+            margin-bottom: 40px;
             letter-spacing: -0.02em;
         }
 
-        .subtitle {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 40px;
-            line-height: 1.5;
-            max-width: 95%;
+        /* Full width hero image */
+        .hero-image-fullwidth {
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #f7fafc;
+        }
+
+        .hero-image-fullwidth img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            filter: contrast(95%) brightness(98%);
         }
 
         .btn {
             display: inline-block;
-            padding: 16px 36px;
-            background-color: #1a1a1a;
+            padding: 18px 40px;
+            background-color: #1a202c;
             color: #ffffff;
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 16px;
+            border-radius: 6px;
+            font-size: 17px;
             font-weight: 500;
-            transition: all 0.2s;
+            transition: all 0.2s ease;
             border: none;
             cursor: pointer;
+            letter-spacing: 0.01em;
         }
 
         .btn:hover {
-            background-color: #333;
-            transform: translateY(-1px);
+            background-color: #2d3748;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         /* Sections */
         section {
-            padding: 80px 0;
+            padding: 100px 0;
             background-color: #ffffff;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e2e8f0;
         }
 
         section:nth-child(even) {
-            background-color: #fafafa;
+            background-color: #f7fafc;
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 26px;
             font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 24px;
+            color: #1a202c;
+            margin-bottom: 28px;
+            letter-spacing: -0.01em;
         }
 
         p {
-            margin-bottom: 16px;
-            color: #444;
-            font-size: 17px;
-            line-height: 1.7;
+            color: #4a5568;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
         /* Lists */
         ul {
             list-style: none;
             padding-left: 0;
+            margin-top: 24px;
         }
 
         li {
-            padding: 10px 0;
-            color: #444;
+            padding: 12px 0;
+            color: #4a5568;
             position: relative;
-            padding-left: 24px;
-            font-size: 17px;
+            padding-left: 28px;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         li:before {
             content: "–";
             position: absolute;
             left: 0;
-            color: #999;
+            color: #718096;
             font-weight: 400;
         }
 
         /* City List */
+        .city-section {
+            background-color: #f7fafc;
+        }
+
         .city-list {
-            margin: 24px 0;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
 
         .city-list li {
-            padding: 12px 0;
-            padding-left: 0;
-            font-size: 18px;
+            padding: 16px 0;
+            padding-left: 8px;
+            font-size: 19px;
             font-weight: 500;
-            color: #1a1a1a;
-            border-bottom: 1px solid #f0f0f0;
+            color: #1a202c;
+            border-bottom: 1px solid #edf2f7;
         }
 
         .city-list li:last-child {
@@ -147,118 +192,147 @@
         }
 
         .city-note {
-            margin-top: 24px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 15px;
-            color: #666;
-            font-style: italic;
+            margin-top: 32px;
+            padding: 24px;
+            background-color: #edf2f7;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #4a5568;
+            line-height: 1.6;
+            border-left: 4px solid #cbd5e0;
         }
 
-        /* Price & Order Box */
+        /* Price Section */
         .price-section {
-            background-color: #fafafa;
+            background-color: #edf2f7;
+            padding: 100px 0;
         }
 
         .price-box {
             background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            padding: 48px;
-            border-radius: 8px;
+            border: 1px solid #cbd5e0;
+            padding: 56px 48px;
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .price {
-            font-size: 36px;
-            font-weight: 600;
-            color: #1a1a1a;
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a202c;
             margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
 
         .price-period {
-            font-size: 17px;
-            color: #555;
-            margin-bottom: 20px;
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 24px;
             font-weight: 500;
         }
 
         .price-note {
-            font-size: 15px;
-            color: #666;
-            margin-bottom: 36px;
-            max-width: 90%;
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 32px;
+            line-height: 1.6;
+            max-width: 80%;
             margin-left: auto;
             margin-right: auto;
-            line-height: 1.6;
+        }
+
+        .price-moms {
+            font-size: 14px;
+            color: #a0aec0;
+            margin-top: 16px;
+            margin-bottom: 32px;
+            letter-spacing: 0.01em;
         }
 
         .btn-large {
-            padding: 18px 48px;
-            font-size: 17px;
+            padding: 20px 56px;
+            font-size: 18px;
         }
 
         /* Footer */
         footer {
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
-            background-color: #f5f5f5;
-            color: #666;
-            font-size: 14px;
+            background-color: #1a202c;
+            color: #a0aec0;
         }
 
         footer p {
-            margin: 6px 0;
-            color: #666;
-            font-size: 14px;
+            margin: 8px 0;
+            color: #a0aec0;
+            font-size: 15px;
+        }
+
+        footer strong {
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            letter-spacing: 0.02em;
         }
 
         /* Responsive */
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
             h1 {
                 font-size: 28px;
             }
             
-            .hero {
-                padding: 40px 0 80px;
+            .hypothetical-question {
+                font-size: 14px;
             }
 
-            .brand {
-                margin-bottom: 40px;
-            }
-            
-            .subtitle {
-                font-size: 18px;
+            .hero-image-fullwidth img {
+                height: 350px;
             }
             
             section {
-                padding: 64px 0;
+                padding: 80px 0;
             }
 
             .price-box {
-                padding: 36px 24px;
+                padding: 40px 28px;
             }
 
-            p, li {
-                font-size: 16px;
-            }
-
-            .city-list li {
-                font-size: 17px;
+            .city-list {
+                padding: 24px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero -->
-    <header class="hero">
+    <!-- Brand Header -->
+    <div class="brand-header">
         <div class="container">
-            <div class="brand">Möjlighetsbrev.se</div>
-            <h1>Relevanta uppdrag – utan att du behöver sålla själv.</h1>
-            <p class="subtitle">Möjlighetsbrev sammanställer varje vecka de uppdrag som faktiskt är värda att titta på.</p>
-            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ</a>
+            <span class="brand">Möjlighetsbrev.se</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <!-- Hypothetical question above headline -->
+            <p class="hypothetical-question">Hur mycket tid går åt till att sålla bland jobb som inte är relevanta?</p>
+            
+            <!-- New shorter, punchier headline -->
+            <h1>Uppdrag som är värda att räkna på – varje vecka.</h1>
+            
+            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ nu</a>
+        </div>
+
+        <!-- Full width hero image - Craft/workshop -->
+        <div class="hero-image-fullwidth">
+            <img src="https://images.pexels.com/photos/5691606/pexels-photo-5691606.jpeg?auto=compress&cs=tinysrgb&w=1260" 
+                 alt="Snickare som mäter virke i verkstad – symboliserar yrkeskunnigt arbete och noggrannhet">
         </div>
     </header>
 
@@ -304,10 +378,11 @@
     </section>
 
     <!-- Städer -->
-    <section>
+    <section class="city-section">
         <div class="container">
             <h2>Städer vi bevakar</h2>
             <p>För närvarande erbjuder vi Möjlighetsbrev för dessa orter:</p>
+            
             <ul class="city-list">
                 <li>1️⃣ Stockholm</li>
                 <li>2️⃣ Göteborg</li>
@@ -315,19 +390,25 @@
                 <li>4️⃣ Uppsala</li>
                 <li>5️⃣ Linköping</li>
             </ul>
-            <p class="city-note">Övriga städer kan vara möjliga vid förfrågan – kontakta oss så ser vi om vi kan lösa det för just din ort.</p>
+            
+            <div class="city-note">
+                <strong>Övriga städer?</strong> Kontakta oss om du är intresserad av annan ort. Vi undersöker om vi kan lösa det för just din stad.
+            </div>
         </div>
     </section>
 
-    <!-- Pris & Beställ – Combined -->
+    <!-- Pris & Beställ -->
     <section class="price-section">
         <div class="container">
-            <h2>Pris</h2>
             <div class="price-box">
                 <div class="price">1 495 kr</div>
                 <div class="price-period">för 3 månader</div>
                 <p class="price-note">Tjänsten levereras i fasta 3-månadersperioder eftersom relevanta uppdrag tar tid att identifiera och utvärdera.</p>
-                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
+                
+                <!-- Tydligt ex moms -->
+                <p class="price-moms">Pris: 1 495 kr / 3 månader (exkl. moms)</p>
+                
+                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
             </div>
         </div>
     </section>
