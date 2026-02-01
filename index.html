@@ -200,7 +200,20 @@
             border-left: 4px solid #cbd5e0;
         }
 
-        /* Price Section - Uppdaterad */
+        /* Delivery info tag */
+        .delivery-tag {
+            display: inline-block;
+            background-color: #edf2f7;
+            color: #4a5568;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Price Section */
         .price-section {
             background-color: #edf2f7;
             padding: 100px 0;
@@ -228,18 +241,28 @@
         .price-period {
             font-size: 18px;
             color: #4a5568;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             font-weight: 500;
         }
 
         .price-moms {
             font-size: 16px;
             color: #718096;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             font-weight: 400;
         }
 
-        /* Nytt: What happens box */
+        .delivery-info {
+            font-size: 17px;
+            color: #2d3748;
+            font-weight: 600;
+            margin: 24px 0;
+            padding: 16px;
+            background-color: #f0fff4;
+            border-radius: 6px;
+            border: 1px solid #9ae6b4;
+        }
+
         .what-happens {
             background-color: #f7fafc;
             border: 1px solid #e2e8f0;
@@ -363,7 +386,7 @@
             
             <h1>Uppdrag som är värda att räkna på – varje vecka.</h1>
             
-            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ nu</a>
+            <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Leverans%3A%20Skickas%20varje%20fredag%20via%20e-post%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn">Beställ nu</a>
         </div>
 
         <div class="hero-image-fullwidth">
@@ -394,7 +417,7 @@
             <h2>Så fungerar det</h2>
             <ul>
                 <li>Du väljer stad eller städer</li>
-                <li>Du får ett veckobrev med utvalda uppdrag</li>
+                <li>Vi skickar ett nytt brev varje fredag</li>
                 <li>Du sparar tid och missar färre möjligheter</li>
             </ul>
         </div>
@@ -404,6 +427,7 @@
     <section>
         <div class="container">
             <h2>Vad du får</h2>
+            <div class="delivery-tag">Leverans varje fredag</div>
             <ul>
                 <li>Veckovis sammanställning via e-post</li>
                 <li>Direktlänkar till varje uppdrag</li>
@@ -433,7 +457,7 @@
         </div>
     </section>
 
-    <!-- Pris & Beställ – Uppdaterad med tydlig info -->
+    <!-- Pris & Beställ -->
     <section class="price-section">
         <div class="container">
             <div class="price-box">
@@ -441,12 +465,17 @@
                 <div class="price-period">för 3 månader</div>
                 <div class="price-moms">Pris exklusive moms. Inga övriga avgifter.</div>
                 
-                <!-- Vad som händer-box -->
+                <!-- Tydlig leveransinfo -->
+                <div class="delivery-info">
+                    Skickas via e-post varje fredag.
+                </div>
+                
                 <div class="what-happens">
                     <h3>Så här fungerar det:</h3>
                     <ul>
                         <li>Du beställer en fast period om 3 månader</li>
                         <li>Fakturan skickas när beställningen behandlas</li>
+                        <li>Du får ett nytt brev varje fredag under perioden</li>
                         <li>Efter 3 månader upphör tjänsten automatiskt</li>
                         <li>Vi kontaktar dig innan perioden tar slut för att höra om du vill fortsätta</li>
                     </ul>
@@ -455,7 +484,7 @@
                     </div>
                 </div>
 
-                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
+                <a href="mailto:kontakt@mojlighetsbrev.se?subject=Beställning%20%E2%80%93%20M%C3%B6jlighetsbrev&body=Hej%2C%0A%0AJag%20vill%20best%C3%A4lla%20M%C3%B6jlighetsbrev.%0A%0A%C3%96nskade%20st%C3%A4der%20%28ange%20nummer%20eller%20st%C3%A4der%29%3A%0A1%EF%B8%8F%E2%83%A3%20Stockholm%0A2%EF%B8%8F%E2%83%A3%20G%C3%B6teborg%0A3%EF%B8%8F%E2%83%A3%20Malm%C3%B6%0A4%EF%B8%8F%E2%83%A3%20Uppsala%0A5%EF%B8%8F%E2%83%A3%20Link%C3%B6ping%0A%0A%C3%96vriga%20st%C3%A4der%3A%20%28ange%20h%C3%A4r%20om%20du%20%C3%B6nskar%20annan%20ort%2C%20vi%20h%C3%B6r%20av%20oss%20om%20det%20g%C3%A5r%20att%20l%C3%B6sa%29%0A%0A---%0A%0AViktig%20information%20om%20best%C3%A4llningen%3A%0A%E2%80%A2%20Tj%C3%A4nsten%20l%C3%B6per%20under%203%20m%C3%A5nader%20i%20taget%0A%E2%80%A2%20Pris%3A%201%20495%20kr%20f%C3%B6r%20perioden%20%28exkl.%20moms%29%0A%E2%80%A2%20Leverans%3A%20Skickas%20varje%20fredag%20via%20e-post%0A%E2%80%A2%20Ingen%20automatisk%20f%C3%B6rl%C3%A4ngning%20%E2%80%93%20du%20v%C3%A4ljer%20sj%C3%A4lv%20om%20du%20vill%20forts%C3%A4tta%20efter%20perioden%0A%E2%80%A2%20Vi%20kontaktar%20dig%20innan%20perioden%20tar%20slut%20f%C3%B6r%20att%20h%C3%B6ra%20om%20du%20%C3%B6nskar%20f%C3%A5%20erbjudande%20om%20forts%C3%A4ttning%0A%0A---%0A%0AFaktureringsuppgifter%3A%0A%E2%80%93%20F%C3%B6retagsnamn%3A%0A%E2%80%93%20Organisationsnummer%3A%0A%E2%80%93%20Faktureringsadress%3A%0A%0AE-postadress%20som%20ska%20ta%20emot%20breven%3A%0A%0AV%C3%A4nliga%20h%C3%A4lsningar" class="btn btn-large">Beställ här</a>
             </div>
         </div>
     </section>
